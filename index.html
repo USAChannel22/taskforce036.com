@@ -1,104 +1,94 @@
-<!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/Thing">
-
-<head>
-    <!-- Required Meta Tags -->
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Task Force 036</title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="TF36 is a special operations style squad who plays in various games.">
+    <meta name="author" content="USA Channel 22">
+    
+    <title>Task Force 36</title>
 
-	<meta itemprop="name" content="Task Force 36">
-    <meta itemprop="url" content="https://taskforce036.com">
-    <meta itemprop="image" content="https://taskforce036.com/logo.png">
-    <meta itemprop="description" name="description" content="TF36 is a special operations style squad who plays in various games.">
-	
-	<!-- Custom CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha256-8uHMIn1ru0GS5KO+zf7Zccf8Uw12IA5DrdEcmMuWLFM=" crossorigin="anonymous" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS Overrides -->
 	<style type="text/css">
-	body.c5 {
-		background-color:#000000; 
-		background-image:url(hexagon3.png); 
-		background-repeat:repeat-x repeat-y;margin:10px; 
-		background-attachment: fixed;
-	}
-	
-	div.c4 {max-width:1200px !important;}
-	.center {text-align:center !important;}
-	.left {float:left;}
-	.right {float:right;}
-	.panel-body {text-align:justify;}
-	.justify {text-align:justify;}
-	.middle {margin:0 auto !important;}
-	.well {margin-bottom:0px !important;}
-	.panel-danger {
-		background-color:rgba(17, 17, 17, 0.9) !important; 
-		color:#DDDDDD !important; 
-		border-color:#00c0fc !important;
-	}
-	.panel-heading {
-		background-image: -webkit-linear-gradient(top,yellow 0,green 100%) !important;
-		background-image: linear-gradient(to bottom,#0066da 0,#00c0fc 100%) !important;
-	}
-	.panel-title {color:#FFFFFF !important;}
-	.panel-heading {border-color:#00c0fc !important;}
-	.navbar-brand {color:#FFFFFF !important;}
-	.navbar-nav {color:#FFFFFF !important;}
-	p.thick {font-weight:bold;}
-	</style>
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha256-8uHMIn1ru0GS5KO+zf7Zccf8Uw12IA5DrdEcmMuWLFM=" crossorigin="anonymous" />
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-</head>
-
+        body.c5 {
+            background-color:#000000; 
+            background-image:url(assets/images/hexagon3.png); 
+            background-repeat:repeat-x repeat-y;margin:10px; 
+            background-attachment: fixed;
+        }
+        
+        div.c4 {max-width:1000px !important;}
+    
+        .left {float:left;}
+        .right {float:right;}
+    
+        .panel-custom {
+            background-color:rgba(17, 17, 17, 0.9) !important; 
+            color:#DDDDDD !important; 
+            border-color:#00c0fc !important;
+        }
+        .panel-heading {
+            background-image: -webkit-linear-gradient(top,yellow 0,green 100%) !important;
+            background-image: linear-gradient(to bottom,#0066da 0,#00c0fc 100%) !important;
+        }
+        .panel-title {color:#FFFFFF !important;}
+        .panel-heading {border-color:#00c0fc !important;}
+        .navbar-brand {color:#FFFFFF !important;}
+        .navbar-nav {color:#FFFFFF !important;}
+        </style>
+  </head>
 <body class="c5">
-<div class="container c4">
-<nav class="navbar navbar-inverse" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Task Force 36</a>
-  </div>
+    <div class="container c4">
+        <nav class="navbar navbar-inverse" role="navigation">
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">Main Page</a></li>
-      <li><a href="news.html">News and Events</a></li>
-      <li><a href="recruitment.html">Recruitment</a></li>
-      <li><a href="games.html">Games</a></li>
-      <li><a href="relations.html">Relations</a></li>
-      <li><a href="members.html">TF36 Operatives</a></li>
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Task Force 36</a>
+            </div>
 
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Main Page</a></li>
+                <li><a href="news.html">News and Events</a></li>
+                <li><a href="recruitment.html">Recruitment</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="relations.html">Relations</a></li>
+                <li><a href="members.html">TF36 Operatives</a></li>
 
-<!-- [end header] -->
+            </ul>
+            </div>
+        </nav>
 
-<div class="jumbotron" style="height:225px;background-color:#000000;background-image:url(logo.png); background-repeat:no-repeat; background-position:50%;background-size:50%;">
+        <!-- [begin content] -->
+
+<div class="jumbotron" style="background-color:#000000;">
+	<img src="assets/images/logo.png" alt="Logo" class="img-responsive" style="margin: 0 auto;max-height:150px;">
 </div>
 
 
 
 
-<div class="panel panel-danger">
+<div class="panel panel-custom">
     <div class="panel-heading">
-        <h3 class="panel-title center">Task Force 036 Overview</h3>
+        <h3 class="panel-title text-center">Task Force 036 Overview</h3>
     </div>
 	<div class="panel-body">
 		TF36 is a special operations style squad who plays in various games (mostly PC at this point). Our most common game of operation at this time is GTA V Online. We are kind players, who protect others. Anyone who diverges will be dealt with.
@@ -128,32 +118,36 @@
 </div>
 
 
-<div class="panel panel-danger">
+<div class="panel panel-custom">
     <div class="panel-heading">
-        <h3 class="panel-title center">Task Force 36 Enlarges Recruitment Campaign</h3>
+        <h3 class="panel-title text-center">Task Force 36 Enlarges Recruitment Campaign</h3>
     </div>
     <div class="panel-body">
-        Due to below average amounts of activity, and a recent lack of man power, we have decided to reach out to players and offer positions in our squad. Twin posts can be found on the GTA Forums ( http://gtaforums.com/topic/707572-now-recruiting-task-force-36-military-crew-ps3/?hl=%2Btask+%2Bforce+%2B36 ) and on the GTA V Crews forums ( http://www.gtavcrews.com/index.html?threads/recruiting-task-force-36-special-operations.2301/ )
+		Due to below average amounts of activity, and a recent lack of man power, we have decided to reach out to players and offer positions in our squad. 
+		Twin posts can be found on the GTA Forums <a href="http://gtaforums.com/topic/707572-now-recruiting-task-force-36-military-crew-ps3/">http://gtaforums.com/topic/707572-now-recruiting-task-force-36-military-crew-ps3/</a> 
+		and on the GTA V Crews forums <a href="http://www.gtavcrews.com/threads/recruiting-task-force-36-special-operations.2301/">http://www.gtavcrews.com/threads/recruiting-task-force-36-special-operations.2301/</a>
     </div>
 </div>
 
-<!-- [begin footer] -->
+        <!-- [end content] -->
 
-<div class="panel panel-danger panel-body center">
-<a href="https://taskforce036.com"><div class="label label-info">&copy; Task Force 036</div></a>
-</div>
-</div>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
-	<script>
-        // activate button for current page
-        $(document).ready(function() {
-            $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
-        });
-    </script>
+        <div class="panel panel-custom panel-body text-center">
+				<a href="https://taskforce036.com">
+					<span class="label label-info">&copy; Task Force 036</span>
+				</a>
+			</div>
 	
-</body>
-</html>
+		</div>
+	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+		<script>
+			// activate button for current page
+			$(document).ready(function() {
+				$('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+			});
+		</script>
+	</body>
+	</html>
